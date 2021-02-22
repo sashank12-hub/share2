@@ -29,19 +29,13 @@ function Login(props) {
             username: 'Qaifi', 
             password: 'Password'
         })
-        if(username == password){
-            setAuth(true);
-            alert('Login Successful');
-            props.history.push('/kafene'); 
+        
+         if(data && data.username==='Qaifi') {
+             setAuth(true);
+             alert('Login Successful');
+             props.history.push('/kafene'); 
             return;
-
-        }
-        // if(data && data.username==='Qaifi') {
-        //     setAuth(true);
-        //     alert('Login Successful');
-        //     props.history.push('/kafene'); 
-        //     return;
-        // } 
+       } 
     }
 
     return (
